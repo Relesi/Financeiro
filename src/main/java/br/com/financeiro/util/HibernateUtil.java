@@ -1,7 +1,6 @@
 package br.com.financeiro.util;
 
 
-
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -24,7 +23,7 @@ public class HibernateUtil {
 			
 			return fabrica;
 		} catch (Throwable ex) {
-			System.err.println("A conexão não foi criada." + ex);
+			System.err.println("Erro de conexão."  + ex);
 			throw new ExceptionInInitializerError(ex);
 		}
 	}
